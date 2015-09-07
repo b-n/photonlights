@@ -23,13 +23,13 @@ $(document).ready(function(){
 		});
 	});
 
-
-	$.urlParam = function(name){
-		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-		return results[1] || 0;
-	}
-
 	if ($('#blinky').length) {
+
+		$.urlParam = function(name){
+			var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+			return results[1] || 0;
+		}
+
 		var retrievedToken = $.urlParam("token");
 		var devices;
 
@@ -77,7 +77,21 @@ $(document).ready(function(){
 	    		}
 			});
 
+		});
 
+		Mousetrap.bind('up up down down left right left right b a enter', function() {
+
+			var deviceId = $('#devices').children(":selected").attr("id");
+
+		    $.ajax({
+			  	type: "POST",
+			  	url: "https://api.particle.io/v1/devices/" + deviceId + "/kr?access_token=" + retrievedToken,
+			  	contentType: "application/x-www-form-urlencoded",
+			  	data: "",
+			  	success: function (data){
+	    			console.log('Success!', data);
+	    		}
+			});
 		});
 
 
