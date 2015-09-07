@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photon</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+
+	<style>
+		body {
+			background-color: aliceblue;
+		}
+		.container {
+			background-color: white;
+			margin-top: 40px;
+			padding: 40px;
+		}
+		form {
+			margin-top: 30px;
+		}
+		label {
+			margin-right: 10px;
+		}
+		button {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<section class="container">
+		<h1>Blinky!</h1>
+		<form id="blinky">
+
+
+			
+			<div class="form-group form-inline">
+			<label>Device</label>
+				<select class="form-control" id="devices">
+				</select>
+			</div>
+
+			
+
+				
+			<div class="form-inline row">
+			
+
+			<div class="col-sm-6">
+			
+			<div class="form-group led">
+			<label>LED 0</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led0" value="001"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led0" value="000"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led0" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 1</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led1" value="011"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led1" value="010"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led1" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 2</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led2" value="021"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led2" value="020"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led2" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 3</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led3" value="031"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led3" value="030"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led3" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 4</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led4" value="041"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led4" value="040"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led4" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 5</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led5" value="051"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led5" value="050"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led5" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 6</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led6" value="061"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led6" value="060"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led6" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 7</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led7" value="071"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led7" value="070"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led7" value="nc" checked> No change
+				</label>
+			</div>
+
+
+</div>
+<div class="col-sm-6">
+			
+			<div class="form-group led"><label>LED 8</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led8" value="081"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led8" value="080"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led8" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 9</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led9" value="091"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led9" value="090"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led9" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 10</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led10" value="101"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led10" value="100"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led10" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 11</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led11" value="111"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led11" value="110"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led11" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 12</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led12" value="121"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led12" value="120"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led12" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 13</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led13" value="131"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led13" value="130"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led13" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 14</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led14" value="141"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led14" value="140"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led14" value="nc" checked> No change
+				</label>
+			</div>
+
+			
+			<div class="form-group led"><label>LED 15</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led15" value="151"> On
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led15" value="150"> Off
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="led15" value="nc" checked> No change
+				</label>
+			</div>
+</div>
+</div>
+
+		  	<button type="submit" class="btn btn-default btn-primary">Submit</button>
+		</form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "photonlights",
+  "version": "0.0.1",
+  "description": "Google Calendar with Particle Photon for meeting room availability",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzchicken/photonlights.git"
+  },
+  "author": "Ben Naylor (nzchicken)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nzchicken/photonlights/issues"
+  },
+  "homepage": "https://github.com/nzchicken/photonlights"
+}
