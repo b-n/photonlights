@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/nzchicken/photonlights/issues"
   },
-  "homepage": "https://github.com/nzchicken/photonlights"
+  "homepage": "https://github.com/nzchicken/photonlights",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "cowsay": "^1.1.1",
+    "es6-module-loader": "^0.17.7",
+    "express": "^4.13.3",
+    "google-auth-library": "^0.9.6",
+    "googleapis": "^2.1.3",
+    "require": "^2.4.20",
+    "traceur": "0.0.91"
+  }
 }
